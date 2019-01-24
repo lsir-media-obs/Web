@@ -62,6 +62,46 @@
 
 							<section>
 								<h3>KEY INSIGHTS</h3>
+								<h5>Visualizing the Media Landscape through the lens of coverage similarity</h5>
+								<p>
+									News entities must select and filter the coverage they broadcast through their respective channels since the set
+									of world events is too large to be treated exhaustively. The subjective nature of this filtering induces biases due to,
+									among other things, resource constraints, editorial guidelines, ideological affinities, or even the fragmented nature of
+									the information at a journalist’s disposal. To caracterize this process, we propose to model this selection as a preference
+									problem, with a set of techniques commonly used in recommender systems, such as those used on Amazon or Netflix.
+
+									<br /><br />
+
+									The intuition is to learn to predict coverage for a given based on what sources similar to itself have covered. The ability to learn
+									across sources removes the need for a ground truth which, in this setting, is seemingly impossible to retrieve. This means that in learning
+									to predict coverage, we learn fingerprints of the sources' coverage. We can then compare these coverage profiles to uncover similarities
+									in the choice of their reporting, usually indicating the presence of a common bias.
+
+									<br /><br />
+
+									<span class="image fit"><img src="images/banner_selbias.png"/></span>
+									<b>Figure</b>
+										<i>Visualizing the media landscape: sources with similar coverage are closer together.
+										Clusters are annotated when as belonging to larger groups that the method is able to
+										capture through coverage similarities.</i>
+
+
+									<br /><br />
+
+									Since the structure arises directly from the coverage we can extract factors of the
+									bias, such as geographic relationships, thematic regards or higher-order structures, despite them not always being evident to
+									the inexperienced eye. One notable example is the presence of small, local broadcast affiliates, usually household names (e.g. Fox or ABC).
+									However, many of these outlets are actually owned by larger corporate structures, some of which, <a href="https://www.youtube.com/watch?v=GvtNyOzGogc" target="_blank">most infamously Sinclair Broadcast Group</a>,
+									have been accused of imposing ideologically charged content on these downstream channels, unbeknownst to the casual viewer.
+
+									<br /><br />
+								</p>
+								<p></p>
+
+								<h5>Observing the effects of ownership on the Media Landscape</h5>
+								<p></p>
+
+								<h5>Detecting highly influential broadcast groups</h5>
 								<p></p>
 							</section>
 
