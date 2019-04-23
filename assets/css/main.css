@@ -3308,9 +3308,10 @@ input, select, textarea {
 
 	#wrapper > * > .inner {
 		width: 100%;
-		max-width: 68em;
+		max-width: 1080px;
 		margin: 0 auto;
 		padding: 0 2.5em;
+		text-align: justify;
 	}
 
 		@media screen and (max-width: 736px) {
@@ -3359,3 +3360,10 @@ figure > figcaption {
     	text-align: center;
 }
 
+ul > li > i {
+	margin-left: -20px;
+}
+
+li > input {
+	margin: 10px;
+}
