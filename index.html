@@ -6,130 +6,159 @@
 -->
 <html>
 	<head>
-		<title>A Dynamic Embedding Model of News Coverage - WWW'19</title>
+		<title>Mapping the Media Landscape</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style type="text/css">
+			.logo {width: 120px;}
+			#top-insights {
+				font-weight: 600;
+			}
+			#main {margin-top: 40px;}
+			.subfigure{}
+		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<!-- <a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title"></span>
-								</a> -->
-
-						</div>
-					</header>
+			
 
 
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<header>
-								<h1>A Dynamic Embedding Model of the Media Landscape</h1>
-								<h3>by <span style='color:#aaa'><a href="https://jrappaz.com" target="_blank">Jérémie Rappaz</a>,
+								
+								<h1>Mapping the News Landscape</h1>
+								<h3>The Influence of Ownership on Media Coverage</h3>
+								<!--<h3>by <span style='color:#aaa'><a href="https://jrappaz.com" target="_blank">Jérémie Rappaz</a>,
 									<a href="https://dtsbourg.me" target="_blank">Dylan Bourgeois</a>,
-									<a href="https://lsir.epfl.ch" target="_blank">Karl Aberer</a></span> @ <span style='color:#aaa'>WebConf 2019 </span></h3>
+									<a href="https://lsir.epfl.ch" target="_blank">Karl Aberer</a></span> @ <span style='color:#aaa'>WebConf 2019 </span>
+								</h3>-->
 								<!-- <p>Accepted for an oral presentation at WebConf 2019 - Web & Society track</p> -->
+
+								
 							</header>
+							<br /><br />
+
+							<span class="image fit"><img src="images/banner_selbias.png"/></span>
+							<div class="subfigure"><span>Figure 1</span></div>
+							<br /><br />							
+							<!--<b>Figure</b>
+							<i>Visualizing the media landscape: sources with similar coverage are closer together.
+							Clusters are annotated when as belonging to larger groups that the method is able to
+							capture through coverage similarities.</i>
+							<br /><br />
+							<span class="image right"><img src="images/news.gif" alt="">Animation of a news source (krcrtv.com) which was acquired in December 2017</span>
+							-->
 
 							<section>
-								<h3>ABOUT THIS WORK</h3>
-								<p>Information about world events is disseminated through a wide variety of
-									news channels, each with specific considerations in the choice of their reporting. Although the multiplicity of these outlets
-									should ensure a variety of viewpoints, recent reports suggest that the rising concentration of media ownership may void this assumption.
-									This observation motivates the study of the impact of ownership on the global media landscape and its influence on the coverage the actual viewer receives.
-									<br /><br />
-									<span class="image right"><img src="images/news.gif" alt="">Animation of a news source (krcrtv.com) which was acquired in December 2017</span>
-									The selection of reported events has been shown to be informative about the high-level structure of the news ecosystem. However,
-									existing methods only provide a static view into this inherently dynamic system. Such a restriction affects their ability to
-									capture time-dependent changes, providing underperforming statistical models and hindering our understanding of the media landscape as a whole.
-									<br /><br />
-									In this work, we present a dynamic embedding method that learns to capture the decision process of individual news sources in their selection
-									of reported events. As opposed to previous approaches, the embedding space is maintained temporally-consistent across successive time epochs,
-									which enables the systematic detection of large-scale transformations in the media landscape over prolonged periods of time. In an experiment covering
-									over 580M real-world event mentions, we show our approach to outperform static embedding methods in predictive terms. We demonstrate the potential of
-									the method for news monitoring applications and investigative journalism by shedding light on important changes in programming induced by mergers
-									and acquisitions, policy changes, or network-wide content diffusion.</p>
-							</section>
-
-							<section>
-								<h3>KEY INSIGHTS</h3>
-								<h5>Visualizing the Media Landscape through the lens of coverage similarity</h5>
-								<p>
-									News entities must select and filter the coverage they broadcast through their respective channels since the set
-									of world events is too large to be treated exhaustively. The subjective nature of this filtering induces biases due to,
-									among other things, resource constraints, editorial guidelines, ideological affinities, or even the fragmented nature of
-									the information at a journalist’s disposal. To caracterize this process, we propose to model this selection as a preference
-									problem, with a set of techniques commonly used in recommender systems, such as those used on Amazon or Netflix.
-
-									<br /><br />
-
-									The intuition is to learn to predict coverage for a given based on what sources similar to itself have covered. The ability to learn
-									across sources removes the need for a ground truth which, in this setting, is seemingly impossible to retrieve. This means that in learning
-									to predict coverage, we learn fingerprints of the sources' coverage. We can then compare these coverage profiles to uncover similarities
-									in the choice of their reporting, usually indicating the presence of a common bias.
-
-									<br /><br />
-
-									<span class="image fit"><img src="images/banner_selbias.png"/></span>
-									<b>Figure</b>
-										<i>Visualizing the media landscape: sources with similar coverage are closer together.
-										Clusters are annotated when as belonging to larger groups that the method is able to
-										capture through coverage similarities.</i>
-
-
-									<br /><br />
-
-									Since the structure arises directly from the coverage we can extract factors of the
-									bias, such as geographic relationships, thematic regards or higher-order structures, despite them not always being evident to
-									the inexperienced eye. One notable example is the presence of small, local broadcast affiliates, usually household names (e.g. Fox or ABC).
-									However, many of these outlets are actually owned by larger corporate structures, some of which, <a href="https://www.youtube.com/watch?v=GvtNyOzGogc" target="_blank">most infamously Sinclair Broadcast Group</a>,
-									have been accused of imposing ideologically charged content on these downstream channels, unbeknownst to the casual viewer.
-
-									<br /><br />
+								<h3 class="underlined">OUR MISSION</h3>
+								<p>	
+									We are researchers from EPFL, fighting for media accountability and information democracy. We work to create an exhaustive map of the digital media ecosystem and to make it accessible to the public. In short,
 								</p>
-								<p></p>
 
-								<h5>Observing the effects of ownership on the Media Landscape</h5>
-								<p></p>
+								<div id="top-insights">
+								<ul >
+									<li><i class="far fa-square"></i> The independance of news channels acquired by large broadcasting groups has recently been questioned.</li>
+									<li><i class="far fa-square"></i> We developped an algorithm that highlights the influence of ownership on broadcasted news and highlight changes in content diffusion.</li>
+									<li><i class="far fa-square"></i> Our method was able to map the evolution of the media landscape in the last 3 years, based on 500M articles from around 8K sources.</li>
+								</ul>
 
-								<h5>Detecting highly influential broadcast groups</h5>
-								<p></p>
+						
+								</div>
+							</section>
+
+
+							<section>
+								<h3 class="underlined">THE PROBLEM</h3>
+								<p>The digitalization and globalization of our news channels had a profound impact on worldwide information diffusion. Today, information is processed in mass by large organizational structures, before being propagated to downstream channels. This process often obfuscates the origin of a news and reduces its traceability. More worryingly, large broadcasting groups have recently been suspected of massive consolidation of resources, a that usually translates into an unilateral selection of news event broadcasted in multiple channels.
+
+								This worrying lack of diversity has recently <a href="https://www.youtube.com/watch?v=GvtNyOzGogc">been exposed by John Oliver</a> in his show <i>Last Week Tonight</i> (HBO). Soon after, a video exemplifying the problem was posted online. 
+
+								<iframe width="728" height="410" src="https://www.youtube.com/embed/hWLjYJ4BzvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+								<!--This phenomenon has an impact on what is called the <a href="https://www.mediamonitor.nl/english/the-concept-of-pluralism-media-diversity/">external pluralism</a> assumption: theoretically, a large number of news channels should be available to ensure a variety of viewpoints, but the suggested rising concentration of media ownership may void this assumption. This observation motivates the study of the impact of ownership on the global media landscape and its influence on the coverage the actual viewer receives.
+
+								<br /><br />-->
+
+								We developped an algorithm to automate the tracking and the monitoring of broadcasted news content. Our method evaluates the similarity across news entities and projects each of the considered channel on a comprehensive map, as show in <a>see Fig.1</a>.
+
+								Since the structure arises directly from the coverage we can extract factors of the bias, such as geographic relationships, thematic regards or higher-order structures, despite them not always being evident to the inexperienced eye. One notable example is the presence of small, local broadcast affiliates, usually household names (e.g. Fox or ABC).
+						
+								However, many of these outlets are actually owned by larger corporate structures, some of which, <a href="https://www.youtube.com/watch?v=GvtNyOzGogc" target="_blank">most infamously Sinclair Broadcast Group</a>, have been accused of imposing ideologically charged content on these downstream channels, unbeknownst to the casual viewer.
+
+								<br /><br />
+
+								Our method borrows from the field of personalization with a set of techniques commonly used in recommender systems, such as those used on Amazon or Netflix. In particular, the algorithm predicts the probability of a channel to cover a specific event, knowing which other sources have selected it. To this extent, the algorithm learns a fingerprints of the sources' coverage patterns. We can then compare these coverage profiles to uncover similarities in the choice of their reporting, usually indicating the presence of a common bias. 
+								
+								</p>
+									
 							</section>
 
 							<section>
-								<h3>CODE & DATA</h3>
+								<h3 class="underlined">THE EVOLUTION OVER TIME</h3>
+								<span class="image fit"><img src="images/evolution.png" alt="">
+								<p>
+									The selection of reported events can generate a comprehensive map of the the news ecosystem. However, the methods only provide a static view into this inherently dynamic system. In order to circumvent this limitation, we developped an additional technique that models the evolution of this ecosystem. The static snapshop becomes an evolving map, that highlight the main tendencies.
+
+									We demonstrate the potential of the method for news monitoring applications and investigative journalism by shedding light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content diffusion. An example of the phenomenon is show <a>in Fig.2</a>: news sources tend to agglomerate themselves in cohesive clusters after their acquisition by 3 well-known news companies, clearly showing the consolidation of resources taking place.
+
+									<br /><br />
+									
+
+							</section>
+
+							<section>
+								<h3 class="underlined">DETECTING HIGHLY INFLUENCIAL BROADCAST GROUPS</h3>
+								<span class="image fit"><img src="images/concentration.jpg" alt="">
+								<p>
+									One of the most common observable pattern is the content alignement of a group of sources in a specific position. On the map, the phenomenon is represented as a group of sources converging toward the same position. We propose an automated method to detect this pattern by introducing the notion of <b>attractors</b>: the algorithm identifies regions of the map toward which many sources tend to move. The region with high potential of attration are show in blue in <a>Fig.3</a>.
+								</p>
+							</section>
+
+							<section>
+								<h3 class="underlined">CODE & PAPERS</h3>
 								<ul class="icons">
 									<li><a href="https://github.com/lsir-media-obs" class="icon style2 fa-github" style="margin-right:1em;"><span class="label">GitHub</span></a>The code is <a href="https://github.com/lsir-media-obs" target="_blank">available on Github</a>.</li><br />
-									<li><a href="https://www.gdeltproject.org/" class="icon style2 fa-database" style="margin-right:1em;"><span class="label">DATA</span></a>The raw data is <a href="https://www.gdeltproject.org/" target="_blank">available from the GDELT website</a>.</li>
-								</ul>
-								<p></p>
-							</section>
-
-							<section>
-								<h3>PAPER</h3>
-								<ul class="icons">
+									<li><a href="https://www.gdeltproject.org/" class="icon style2 fa-database" style="margin-right:1em;"><span class="label">DATA</span></a>The raw data is <a href="https://www.gdeltproject.org/" target="_blank">available from the GDELT website</a>.</li><br />
+								
 									<li><a href="#" class="icon style2 fa-paperclip" style="margin-right:1em;"><span class="label">Paper</span></a>The camera-ready version will be released on Arxiv shortly.</li><br />
 									<li><a href="#" class="icon style2 fa-bookmark" style="margin-right:1em;"><span class="label">Proceedings</span></a>The full conference proceedings will be made available some time in 2019.</li><br />
-									<li><a href="#" class="icon style2 fa-clipboard" style="margin-right:1em;"><span class="label">Cite</span></a>To cite this work, you can use this <a href="#" target="_blank">.bib file</a> or copy the following.</li><br />
-									<li><pre>
-										<code>@inproceedings{rappaz19, <br /> title = {A Dynamic Embedding Model of the Media Landscape}, <br /> booktitle = {Companion Proceedings of the The Web Conference 2019}, <br /> series = {WWW '18}, <br /> numpages = {11}, <br /> publisher = {International World Wide Web Conferences Steering Committee}, <br /> author = {Rappaz, J{\'e}r{\'e} and Bourgeois, Dylan and Aberer, Karl}, <br /> year = {2019},<br />}</code>
-									</pre></li>
+									<li><a href="#" class="icon style2 fa-clipboard" style="margin-right:1em;"><span class="label">Cite</span></a>To cite this work, you can use this <a href="#" target="_blank">.bib file</a>.</li><br />
+									
 								</ul>
 								<p></p>
 							</section>
 
 							<!-- Image -->
 								<section>
-									<h2>Who we are</h2>
+									<h3 class="underlined">GET IN TOUCH</h3>
+									We believe that our goal cannot be achieved without building strong collaborations between determined organizations and individuals. <br />
+									Don't hesitate to reach out at <b><a>media@obs.com</a></b>.
+									<br /><br />
+									<br /><br />
+
+									<h5>Members of the initiative</h5>
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-2"><span class="image fit"><img src="images/jay.jpg" alt="" /></span></div>
+											<div class="col-10">
+												<h4>Jérémie Rappaz</h4>
+												<p>
+													Ph.D. student at Ecole Polytechnique Fédérale de Lausanne (EPFL) under the supervision of Prof.
+													Karl Aberer. His research interests focus on predictive methods that involve massive amounts of people.
+													He particularly like topics that revolve around recommender systems and social dynamics.
+												</p>
+											</div>
+										</div>
+									</div>
+
+									
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-2"><span class="image fit"><img src="images/dylan.png" alt="" /></span></div>
@@ -146,154 +175,19 @@
 
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-2"><span class="image fit"><img src="images/jay.jpg" alt="" /></span></div>
+											<div class="col-2"><span class="image fit"><img src="images/karl.jpg" alt="" /></span></div>
 											<div class="col-10">
-												<h4>Jérémie Rappaz</h4>
+												<h4>Karl Aberer</h4>
 												<p>
-													Ph.D. student at Ecole Polytechnique Fédérale de Lausanne (EPFL) under the supervision of Prof.
-													Karl Aberer. His research interests focus on predictive methods that involve massive amounts of people.
-													He particularly like topics that revolve around recommender systems and social dynamics.
+													Karl is a full professor at EPFL and head of the Distributed Information Systems Laboratory.
 												</p>
 											</div>
 										</div>
 									</div>
 
+
+
 <br /><br /><br />
-									<!--<h2>MORE OF OUR WORK</h2>
-									<section class="tiles">
-										<article class="style1">
-											<span class="image">
-												<img src="images/pic01.jpg" alt="" />
-											</span>
-											<a href="https://lsir-media-obs.github.io/selection-bias-www2018/">
-												<h2>Selection Bias</h2>
-												<div class="content">
-													<p>Uncovering latent structures through patterns in news coverage.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style2">
-											<span class="image">
-												<img src="images/pic02.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Dynamic Embeddings</h2>
-												<div class="content">
-													<p>Studying the dynamics of the media landscape.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style3">
-											<span class="image">
-												<img src="images/pic03.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Coverage diversity</h2>
-												<div class="content">
-													<p>Selecting sets of diverse sources.</p>
-												</div>
-											</a>
-										</article>
-										 <article class="style4">
-											<span class="image">
-												<img src="images/pic04.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Tempus</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style5">
-											<span class="image">
-												<img src="images/pic05.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Aliquam</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style6">
-											<span class="image">
-												<img src="images/pic06.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Veroeros</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style2">
-											<span class="image">
-												<img src="images/pic07.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Ipsum</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style3">
-											<span class="image">
-												<img src="images/pic08.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Dolor</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style1">
-											<span class="image">
-												<img src="images/pic09.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Nullam</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style5">
-											<span class="image">
-												<img src="images/pic10.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Ultricies</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style6">
-											<span class="image">
-												<img src="images/pic11.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Dictum</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article>
-										<article class="style4">
-											<span class="image">
-												<img src="images/pic12.jpg" alt="" />
-											</span>
-											<a href="generic.html">
-												<h2>Pretium</h2>
-												<div class="content">
-													<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-												</div>
-											</a>
-										</article> -->
-									<!-- </section> -->
 									<br /><br /><br />
 						</div>
 					</div>
@@ -321,12 +215,7 @@
 								</form>
 							</section> -->
 							<section>
-								<h2>Get in touch</h2>
-								<ul class="icons">
-									<li><a href="https://twitter.com/dtsbourg" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://github.com/lsir-media-obs" class="icon style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="mailto:contact@dtsbourg.me" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
-								</ul>
+								
 							</section>
 							<ul class="copyright">
 								<li>&copy; LSIR. All rights reserved</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
