@@ -45,8 +45,13 @@
 							</header>
 							<br /><br />
 
-							<span class="image fit"><img src="images/banner_selbias.png"/></span>
-							<div class="subfigure"><span>Figure 1</span></div>
+							<figure id="fig1">
+								<img src="images/banner_selbias.png"/>
+								<figcaption>
+									<div class="fig-title">Figure 1</div>
+								</figcaption>	
+							</figure>
+
 							<br /><br />							
 							<!--<b>Figure</b>
 							<i>Visualizing the media landscape: sources with similar coverage are closer together.
@@ -86,7 +91,7 @@
 
 								<br /><br />-->
 
-								We developped an algorithm to automate the tracking and the monitoring of broadcasted news content. Our method evaluates the similarity across news entities and projects each of the considered channel on a comprehensive map, as show in <a>see Fig.1</a>.
+								We developped an algorithm to automate the tracking and the monitoring of broadcasted news content. Our method evaluates the similarity across news entities and projects each of the considered channel on a comprehensive map, as show in <a  href="#fig1">see Fig.1</a>.
 
 								Since the structure arises directly from the coverage we can extract factors of the bias, such as geographic relationships, thematic regards or higher-order structures, despite them not always being evident to the inexperienced eye. One notable example is the presence of small, local broadcast affiliates, usually household names (e.g. Fox or ABC).
 						
@@ -100,13 +105,20 @@
 									
 							</section>
 
-							<section>
+							<section >
 								<h3 class="underlined">THE EVOLUTION OVER TIME</h3>
-								<span class="image fit"><img src="images/evolution.png" alt="">
+								
+								<figure id="fig2">
+								<img src="images/evolution.png"/>
+								<figcaption>
+									<div class="fig-title">Figure 2</div>
+								</figcaption>	
+								</figure>
+
 								<p>
 									The selection of reported events can generate a comprehensive map of the the news ecosystem. However, the methods only provide a static view into this inherently dynamic system. In order to circumvent this limitation, we developped an additional technique that models the evolution of this ecosystem. The static snapshop becomes an evolving map, that highlight the main tendencies.
 
-									We demonstrate the potential of the method for news monitoring applications and investigative journalism by shedding light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content diffusion. An example of the phenomenon is show <a>in Fig.2</a>: news sources tend to agglomerate themselves in cohesive clusters after their acquisition by 3 well-known news companies, clearly showing the consolidation of resources taking place.
+									We demonstrate the potential of the method for news monitoring applications and investigative journalism by shedding light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content diffusion. An example of the phenomenon is show <a href="#fig2">in Fig.2</a>: news sources tend to agglomerate themselves in cohesive clusters after their acquisition by 3 well-known news companies, clearly showing the consolidation of resources taking place.
 
 									<br /><br />
 									
@@ -115,9 +127,16 @@
 
 							<section>
 								<h3 class="underlined">DETECTING HIGHLY INFLUENCIAL BROADCAST GROUPS</h3>
-								<span class="image fit"><img src="images/concentration.jpg" alt="">
+								
+								<figure id="fig3">
+									<img src="images/concentration.jpg"/>
+									<figcaption>
+										<div class="fig-title">Figure 3</div>
+									</figcaption>	
+								</figure>
+
 								<p>
-									One of the most common observable pattern is the content alignement of a group of sources in a specific position. On the map, the phenomenon is represented as a group of sources converging toward the same position. We propose an automated method to detect this pattern by introducing the notion of <b>attractors</b>: the algorithm identifies regions of the map toward which many sources tend to move. The region with high potential of attration are show in blue in <a>Fig.3</a>.
+									One of the most common observable pattern is the content alignement of a group of sources in a specific position. On the map, the phenomenon is represented as a group of sources converging toward the same position. We propose an automated method to detect this pattern by introducing the notion of <b>attractors</b>: the algorithm identifies regions of the map toward which many sources tend to move. The region with high potential of attration are show in blue in <a href="#fig3">Fig.3</a>.
 								</p>
 							</section>
 
@@ -139,8 +158,25 @@
 								<section>
 									<h3 class="underlined">GET IN TOUCH</h3>
 									We believe that our goal cannot be achieved without building strong collaborations between determined organizations and individuals. <br />
-									Don't hesitate to reach out at <b><a>media@obs.com</a></b>.
+									Don't hesitate to reach out at <b><a>media@obs.com</a></b> and subscribe to our newsletter:
 									<br /><br />
+
+									<form method="post" action="#">
+										<div class="row gtr-uniform">
+								
+											<div class="col-12">
+												<div class="textarea-wrapper"><textarea name="demo-message" id="demo-message" placeholder="Enter your email" rows="1" style="overflow: hidden; resize: none; height: 69px;"></textarea></div>
+											</div>
+											<div class="col-12">
+												<ul class="actions">
+													<li><input type="submit" value="Subscribe"></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+										
+									
+									
 									<br /><br />
 
 									<h5>Members of the initiative</h5>
