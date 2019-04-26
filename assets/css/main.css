@@ -121,10 +121,10 @@ input, select, textarea {
 		color: #585858;
 		font-family: "Muli",sans-serif;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
-		
+
 		font-size: 16pt;
 		font-weight: 300;
-		line-height: 1.75;
+		line-height: 1.5;
 
 	}
 
@@ -132,7 +132,7 @@ input, select, textarea {
 
 			body, input, select, textarea {
 				font-size: 15pt;
-				
+
 			}
 
 		}
@@ -218,7 +218,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1em;
-		
+
 	}
 
 	h4 {
@@ -1879,6 +1879,7 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			margin-top: 15px;
 		}
 
 		ul.alt {
@@ -1911,7 +1912,7 @@ input, select, textarea {
 		}
 
 	ul { list-style-type: none; }
-	
+
 
 /* Actions */
 
@@ -3343,11 +3344,11 @@ figure > img {
 		-webkit-transition: opacity 0.5s; /* For Safari 3.1 to 6.0 */
 		transition: opacity 0.5s;
 	}
-	
+
 figure > img:hover {
 		opacity: 0.9;
 	}
-	
+
 figure > figcaption {
 		padding: 10px;
 		line-height: 1.5;
@@ -3368,5 +3369,3 @@ ul > li > i {
 li > input {
 	margin: 10px;
 }
-
-

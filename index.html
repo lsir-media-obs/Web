@@ -16,17 +16,20 @@
 			.logo {width: 120px;}
 			#top-insights {
 				font-weight: 600;
+				margin-left: 40px;
+				margin-right: 60px;
 			}
 			#main {margin-top: 40px;}
 			.pad-left{padding-left: 70px;}
 			.highred{color: #f2849e}
+			h4 { margin-bottom: 0.5em;}
 		</style>
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
 			<div id="wrapper">
 
-			
+
 
 
 				<!-- Main -->
@@ -43,18 +46,19 @@
 								</h3>-->
 								<!-- <p>Accepted for an oral presentation at WebConf 2019 - Web & Society track</p> -->
 
-								
+
 							</header>
 							<br /><br />
 
 							<figure id="fig1">
 								<img src="images/banner_selbias.png"/>
+								<br /><br />
 								<figcaption>
-									<div class="fig-title">Figure 1</div>
-								</figcaption>	
+									<div class="fig-title">Figure 1: A comprehensive map of the media landscape.</div>
+								</figcaption>
 							</figure>
 
-							<br /><br />							
+							<br />
 							<!--<b>Figure</b>
 							<i>Visualizing the media landscape: sources with similar coverage are closer together.
 							Clusters are annotated when as belonging to larger groups that the method is able to
@@ -65,39 +69,38 @@
 
 							<section>
 								<h3 class="underlined">OUR MISSION</h3>
-								<p>	
-									We are researchers from EPFL, fighting for media accountability and information democracy. Because the independance of news channels acquired by large broadcasting groups has recently been questioned, we work to create an exhaustive map of the digital media ecosystem. In short,
+								<p>
+									We are researchers from EPFL, fighting for media accountability and information democracy. Because the independance of news
+									channels acquired by large broadcasting groups has recently been questioned, we are working to create an exhaustive map of the
+									digital media ecosystem. In short,
 								</p>
 
 								<div id="top-insights">
-								<ul >
-									<li><i class="far fa-square"></i> We developped an algorithm that highlights the influence of ownership on broadcasted news and highlight changes in content diffusion.</li>
-									<li><i class="far fa-square"></i> Our method was able to map the evolution of the media landscape in the last 3 years, based on 500M articles from around 8K sources.</li>
-									<li class="highred"><i class="far fa-square"></i> We plan to release an interactive map online, subscribe to our newsletter to stay informed.</li>
+								<ul>
+									<li><i class="far fa-circle"></i> We developped an algorithm that highlights the influence of ownership on broadcasted news and highlight changes in content diffusion.</li>
+									<li><i class="far fa-square"></i> With this, we tracked the evolution of the media landscape in the last 3 years, based on coverage from 500M articles shared by around 8K sources.</li>
+									<li><i class="far fa-square"></i> We plan to release an open and interactive map based on these insights. <a href="#">Subscribe to our newsletter to stay tuned!</a></li>
 								</ul>
 
-								<form action="">
-			
-									  <div class="container" style="background-color:white; float: left; width: 70%; margin-left: 5%;">
-									    <input type="text" placeholder="Email address" name="mail" required style="height: 2.8em;border-radius: 4px 0 0 4px; padding-left: 30px;">
-									    
-									  </div>
 
-									  <div class="container" style="float: left; widt: 30%;"">
-									    <input type="submit" value="Subscribe" style="border-radius: 0 4px 4px 0;">
-									  </div>
-					
-								</form>
-						
 								</div>
 							</section>
 
 
 							<section>
 								<h3 class="underlined">THE PROBLEM</h3>
-								<p>The digitalization and globalization of our news channels had a profound impact on worldwide information diffusion. Today, information is processed in mass by large organizational structures, before being propagated to local channels. This process often obfuscates the origin of a news and reduces its traceability. More worryingly, large broadcasting groups have recently been suspected of massive consolidation of resources, meaning that multiple local channel transmit the same unilateral selection of news.
+								<p>The digitalization and globalization of our news channels has had a profound impact on worldwide information diffusion. Nowadays, information
+									is processed in mass by large organizational structures, before being propagated to local channels.
+									This process often obfuscates the origin of a news story, blurs the accountability chain to the author of its coverage,
+									and reduces the traceability to its inception.
 
-								This worrying lack of diversity has recently <a href="https://www.youtube.com/watch?v=GvtNyOzGogc">been exposed by John Oliver</a> in his show <i>Last Week Tonight</i> (HBO). Soon after, a video exemplifying the problem was posted online. 
+									<br /><br />
+
+									Large broadcasting groups have recently been suspected of massive consolidation of resources, pooling resources to reduce the cost of producing stories.
+									Unfortunately, this reduces the diversity of coverage that arrives to the viewer, with multiple local channels sharing the same
+									selection of news, pruned by actors often unbeknownst to them.
+
+								The lack of diversity and accountability can be worrisome, particularly when this content is ideologically charged, as has recently <a href="https://www.youtube.com/watch?v=GvtNyOzGogc">been exposed by John Oliver</a> in his show <i>Last Week Tonight</i> (HBO). This surreal footage shows journalists all reading the same scripted text, provided by Sinclair Broadcasting Group, a large conglomerate of local sources, about ... the lack of diversity in the news.
 
 								<iframe width="728" height="410" src="https://www.youtube.com/embed/hWLjYJ4BzvI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -105,54 +108,96 @@
 
 								<br /><br />-->
 
-								We developped an algorithm to automate the tracking and the monitoring of broadcasted news content. 
-								One of the main difficulty in the development of such method is the absence of ground thruth : any selection of events is partial by nature and is only comparable to the selection made by other channels. Therefore, our method evaluates the similarity across news entities and projects each of the considered channel on a comprehensive map, as show in <a  href="#fig1">see Fig.1</a>.
+								In our work, we proposed an algorithm to automate the tracking and the monitoring of broadcasted news content.
+								One of the main difficulties in the development of such method is the absence of ground truth :
+								any selection of events is partial by nature and is only comparable to the selection made by other channels.
 
-								Since the structure arises directly from the coverage we can extract factors of the bias, such as geographic relationships, thematic regards or higher-order structures, despite them not always being evident to the inexperienced eye. One notable example is the presence of small, local broadcast affiliates, usually household names (e.g. Fox or ABC).
-						
-								However, many of these outlets are actually owned by larger corporate structures, some of which, <a href="https://www.youtube.com/watch?v=GvtNyOzGogc" target="_blank">most infamously Sinclair Broadcast Group</a>, have been accused of imposing ideologically charged content on these downstream channels, unbeknownst to the casual viewer.
+								Therefore, our method compares the coverage of events <i>across</i> news entities. This produces a similarity map, where distances
+								between channels represent the similarity of their coverage. An example map is shown in <a href="#fig1">Figure 1</a>.
 
 								<br /><br />
 
-								Our method borrows from the field of personalization with a set of techniques commonly used in recommender systems, such as those used on Amazon or Netflix. In particular, the algorithm predicts the probability of a channel to cover a specific event, knowing which other sources have selected it. To this extent, the algorithm learns a fingerprints of the sources' coverage patterns. We can then compare these coverage profiles to uncover similarities in the choice of their reporting, usually indicating the presence of a common bias. Sources appearing close together on the map are likely to have very similar selection of events.
-								
+								The map reveals structure that is directly derived from coverage. This means we can identify common patterns in sources' coverage after the fact, i.e. without any assumptions on
+								what they may be. In other words we do not bias the search for biases.
+
+								Through analysis, we uncovered topical factors such as sources' geographic relationships - local sources cover similar events - or thematic regards.
+								Interestingly, we also reveal the influence of higher-order broadcast structures, evidence for the influence of large corporate actors in local news.
+
+
+								Isolating these patterns is far from obvious, particularly given that a source's branding does not always reveal its affiliation: large broadcast entities
+								like Sinclair own franchised outlets, often household names like Fox or ABC. Our method provides transparency to the viewer, going beyond surface branding to
+								reinstate accountability towards the true origin of the broadcast content.
+
+								<!-- However, many of these outlets are actually owned by larger corporate structures, some of which, <a href="https://www.youtube.com/watch?v=GvtNyOzGogc" target="_blank">most infamously Sinclair Broadcast Group</a>, have been accused of imposing ideologically charged content on these downstream channels, unbeknownst to the casual viewer. -->
+
+								<br /><br />
+
+								Technically speaking, our method borrows from the field of personalization with a set of techniques commonly used in recommender systems,
+								such as those used on Amazon or Netflix. The intuition is that we can model a source's selection of covered news as a preferrence problem:
+								the editor <i>selects</i> or chooses the events that are most relevant to their audience.
+
+								As such, the algorithm tries to predict the likelihood of a channel covering a given event. To do so, it observes
+								which other sources have selected it, trying to mimick the behaviour of sources similar to that which it is trying to model.
+								In a sense, the algorithm learns a fingerprint of each sources' coverage patterns so it can match it to other similar ones.
+								These coverage profiles can then be compared to uncover similarities in the choice of their reporting,
+								usually indicating the presence of a common bias. In sum, sources appearing close together on the map are likely to have very similar selection of events.
+
 								</p>
-									
+
 							</section>
 
 							<section >
 								<h3 class="underlined">An EVOLVING MAP</h3>
-								
+
 								<figure id="fig2">
 								<img src="images/evolution.png"/>
+								<br /><br />
 								<figcaption>
-									<div class="fig-title">Figure 2</div>
-								</figcaption>	
+									<div class="fig-title">Figure 2: An evolving map of the media landscape.</div>
+								</figcaption>
 								</figure>
+								<br />
 
 								<p>
-									The selection of reported events can generate a comprehensive map of the the news ecosystem. However, the methods only provide a static view into this inherently dynamic system. In order to circumvent this limitation, we developped an additional technique that models the evolution of the media landscape. The static snapshot becomes an evolving map that highlights important changes that occur when channels modify they news coverage habits.
+									We have shown how we can generate a comprehensive map of the the news ecosystem from a selection of reported events. However, this first method only
+									provides a static view into an inherently dynamic system. As the media landscape is always evolving, we need a more complete model which
+									takes into account the dynamics of the news ecosystem. We extend the ideas that provide us with a static snapshot to produce an evolving map of source
+									similarity. It highlights
+									important changes that occur when channels modify their news coverage habits. The external or internal forces driving this change can also
+									be isolated to better understand influences on the media ecosystem.
 
-									We demonstrate the potential of the method for news monitoring applications and investigative journalism by shedding light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content diffusion. An example of the phenomenon is shown <a href="#fig2">in Fig.2</a> : news sources tend to agglomerate themselves into cohesive clusters after their acquisitions by three well-known news companies, clearly showing the consolidation of resources taking place in background.
+									For example, we demonstrate the method's potential for news monitoring applications and investigative journalism by shedding
+									light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content
+									diffusion. An example of the phenomenon is shown <a href="#fig2">in Figure 2</a>: news sources tend to agglomerate into
+									cohesive clusters after their acquisitions by three well-known news companies, clearly showing the consolidation of resources
+									taking place in background and the uniformization of information channels.
+								</p>
 
 							</section>
 
 							<section>
 								<h3 class="underlined">DETECTING HIGHLY INFLUENCIAL BROADCAST GROUPS</h3>
-								
+
 								<figure id="fig3">
 									<img src="images/concentration.jpg"/>
+									<br /><br />
 									<figcaption>
-										<div class="fig-title">Figure 3</div>
-									</figcaption>	
+										<div class="fig-title">Figure 3: Clustering highly influential sources, tracking alignment with the sources they attract.</div>
+									</figcaption>
 								</figure>
+								<br />
 
 								<p>
-									One of the most common observable pattern is the convergence of a group of sources towards a specific position : as the similarity of their selection of news rises, the model will group the source together in space. We propose an automated method to detect this phenomenon by introducing the notion of <i>attractors</i> : the algorithm identifies regions of the map toward which many sources tend to cluster together. The region with high potential of attration are show in blue in <a href="#fig3">Fig.3</a>.
+									One of the most common observable pattern is the convergence of a group of sources towards a specific position: as the similarity of
+									their selection of news increases, the model will highlight their increased similarity. We propose an automated method to detect this
+									phenomenon by introducing the notion of <i>attractors</i>: the algorithm identifies regions of the map toward which many sources converge.
+									Regions with a high potential of attraction are shown in blue in <a href="#fig3">Figure 3</a>.
 
 									<br /><br />
 
-									Once identified, the news sources moving toward those positions can be monitored. For example, the acquisition campaing performed by Sinclair can be visualized on the right figure. The distance from four sources to the attractor is abruptly reduced, suggesting an alignement of content post-acquisition.
+									Once identified, the attracted news sources, which are converging towards an attractor, can be monitored. For example, the acquisition
+									campaign performed by Sinclair in September 2017 can be visualized on the right-hand side of <a href="#fig3">Figure 3</a>. The distance from
+									four sources to the attractor is abruptly reduced, suggesting an alignement of content post-acquisition.
 
 								</p>
 							</section>
@@ -163,7 +208,7 @@
 								<ul>
 										<li>
 											<b><a href="#" class="icon fa-file" style="margin-right:1em;"><span class="label">Paper</span></a>
-											A Dynamic Embedding Model of the Media Landscape [WWW'19]</b>
+											A Dynamic Embedding Model of the Media Landscape </b> &ensp; // &ensp;  <span class="highred">WWW'19</span>
 											<li class="pad-left">
 												<input type="submit" value="paper" class="small">
 												<input type="submit" value="code" class="primary small">
@@ -171,7 +216,7 @@
 										</li>
 										<li>
 											<b><a href="#" class="icon fa-file" style="margin-right:1em;"><span class="label">Paper</span></a>
-											Selection Bias in News Coverage: Learning it, Fighting it [WWW'18]</b>
+											Selection Bias in News Coverage: Learning it, Fighting it </b> &ensp; // &ensp;  <span class="highred">WWW'18</span>
 											<li class="pad-left">
 												<input type="submit" value="paper" class="small">
 												<input type="submit" value="code" class="primary small">
@@ -181,22 +226,40 @@
 								</ul>
 
 
+
+
 							</section>
 
 							<!-- Image -->
 								<section>
 									<h3 class="underlined">CONTACTS</h3>
-									Don't hesitate to reach out at <b><a>info@obs.media</a></b>.
-									
-									
-									<br /><br />
+									Don't hesitate to reach out to <b><a>info@obs.media</a></b> for more information or resources regarding this work.
+
+									To follow our research, and stay informed of new work, for example the upcoming interactive media map, you can register for updates here:
+
+									<br /><br /><br />
+
+									<form action="">
+
+										  <div class="container" style="background-color:white; float: left; width: 70%; margin-left: 5%;">
+											<input type="text" placeholder="Email address" name="mail" required style="height: 2.8em;border-radius: 4px 0 0 4px; padding-left: 30px;">
+
+										  </div>
+
+										  <div class="container" style="float: left;">
+											<input type="submit" value="Subscribe" style="border-radius: 0 4px 4px 0;">
+										  </div>
+
+									</form>
+
+									<br />
 
 									<h5>Members of the initiative</h5>
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-2"><span class="image fit"><img src="images/jay.jpg" alt="" /></span></div>
 											<div class="col-10">
-												<h4>Jérémie Rappaz</h4>
+												<h4><a href="https://jrappaz.com">Jérémie Rappaz</a></h4>
 												<p>
 													Ph.D. student at Ecole Polytechnique Fédérale de Lausanne (EPFL) under the supervision of Prof.
 													Karl Aberer. His research interests focus on predictive methods that involve massive amounts of people.
@@ -206,12 +269,12 @@
 										</div>
 									</div>
 
-									
+
 									<div class="box alt">
 										<div class="row gtr-uniform">
 											<div class="col-2"><span class="image fit"><img src="images/dylan.png" alt="" /></span></div>
 											<div class="col-10">
-												<h4>Dylan Bourgeois</h4>
+												<h4><a href="https://dtsbourg.me">Dylan Bourgeois</a></h4>
 												<p>
 													Masters Student at EPFL, currently working towards his masters’ thesis at Stanford University.
 													He focuses on the application and implications of Machine Learning in different disciplines,
@@ -225,7 +288,7 @@
 										<div class="row gtr-uniform">
 											<div class="col-2"><span class="image fit"><img src="images/karl.jpg" alt="" /></span></div>
 											<div class="col-10">
-												<h4>Karl Aberer</h4>
+												<h4><a href="https://lsir.epfl.ch">Karl Aberer</a></h4>
 												<p>
 													Karl is a full professor at EPFL and head of the Distributed Information Systems Laboratory.
 												</p>
@@ -234,9 +297,9 @@
 									</div>
 
 
-
+<!--
 <br /><br /><br />
-									<br /><br /><br />
+									<br /><br /><br /> -->
 						</div>
 					</div>
 
@@ -262,9 +325,9 @@
 									</ul>
 								</form>
 							</section> -->
-							<section>
-								
-							</section>
+							<!-- <section>
+
+							</section> -->
 							<ul class="copyright">
 								<li>&copy; LSIR. All rights reserved</li><li>Template: <a href="http://html5up.net">HTML5 UP</a></li>
 							</ul>
