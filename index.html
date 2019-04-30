@@ -70,26 +70,27 @@
 							<section>
 								<h3 class="underlined">OUR MISSION</h3>
 								<p>
-									We are researchers from EPFL, fighting for media accountability and information democracy. Because the independance of news
+									We are researchers from EPFL, fighting for media accountability and information democracy. Because the independence of news
 									channels acquired by large broadcasting groups has recently been questioned, we are working to create an exhaustive map of the
 									digital media ecosystem. In short,
 								</p>
 
 								<div id="top-insights">
 								<ul>
-									<li><i class="far fa-circle"></i> We developped an algorithm that highlights the influence of ownership on broadcasted news and highlight changes in content diffusion.</li>
-									<li><i class="far fa-square"></i> With this, we tracked the evolution of the media landscape in the last 3 years, based on coverage from 500M articles shared by around 8K sources.</li>
-									<li><i class="far fa-square"></i> We plan to release an open and interactive map based on these insights. <a href="#">Subscribe to our newsletter to stay tuned!</a></li>
+									<li><i class="far fa-circle"></i> Leveraging a model of source similarity based on observed coverage, we propose a method to model the media landscape's behavior.</li>
+									<li><i class="far fa-circle"></i> By tracking sources' evolution over time, we identify driving forces, from the influence of ownership to large-scale content diffusion patterns.</li>
+									<li><i class="far fa-square"></i> We produce a dynamic map of the media landscape over the last 3 years, based on coverage from 500M articles shared by around 8K sources.</li>
 								</ul>
 
-
 								</div>
-							</section>
+								We plan to release an open and interactive map based on these insights, which can be used by anyone, from viewers to journalists, to dig into patterns that influence the media ecosystem. <a href="#">Subscribe to our newsletter to stay tuned!</a>
 
+							</section>
+<br /><br />
 
 							<section>
 								<h3 class="underlined">THE PROBLEM</h3>
-								<p>The digitalization and globalization of our news channels has had a profound impact on worldwide information diffusion. Nowadays, information
+								<p>The digitalization and globalization of our news channels have had a profound impact on worldwide information diffusion. Nowadays, information
 									is processed in mass by large organizational structures, before being propagated to local channels.
 									This process often obfuscates the origin of a news story, blurs the accountability chain to the author of its coverage,
 									and reduces the traceability to its inception.
@@ -97,7 +98,7 @@
 									<br /><br />
 
 									Large broadcasting groups have recently been suspected of massive consolidation of resources, pooling resources to reduce the cost of producing stories.
-									Unfortunately, this reduces the diversity of coverage that arrives to the viewer, with multiple local channels sharing the same
+									Unfortunately, this reduces the diversity of coverage that reaches the viewer, with multiple local channels sharing the same
 									selection of news, pruned by actors often unbeknownst to them.
 
 								The lack of diversity and accountability can be worrisome, particularly when this content is ideologically charged, as has recently <a href="https://www.youtube.com/watch?v=GvtNyOzGogc">been exposed by John Oliver</a> in his show <i>Last Week Tonight</i> (HBO). This surreal footage shows journalists all reading the same scripted text, provided by Sinclair Broadcasting Group, a large conglomerate of local sources, about ... the lack of diversity in the news.
@@ -109,7 +110,7 @@
 								<br /><br />-->
 
 								In our work, we proposed an algorithm to automate the tracking and the monitoring of broadcasted news content.
-								One of the main difficulties in the development of such method is the absence of ground truth :
+								One of the main difficulties in the development of such a method is the absence of ground truth:
 								any selection of events is partial by nature and is only comparable to the selection made by other channels.
 
 								Therefore, our method compares the coverage of events <i>across</i> news entities. This produces a similarity map, where distances
@@ -117,8 +118,8 @@
 
 								<br /><br />
 
-								The map reveals structure that is directly derived from coverage. This means we can identify common patterns in sources' coverage after the fact, i.e. without any assumptions on
-								what they may be. In other words we do not bias the search for biases.
+								The map reveals a structure that is directly derived from coverage. This means we can identify common patterns in sources' coverage after the fact, i.e. without any assumptions on
+								what they may be. In other words, we do not bias the search for biases.
 
 								Through analysis, we uncovered topical factors such as sources' geographic relationships - local sources cover similar events - or thematic regards.
 								Interestingly, we also reveal the influence of higher-order broadcast structures, evidence for the influence of large corporate actors in local news.
@@ -133,14 +134,14 @@
 								<br /><br />
 
 								Technically speaking, our method borrows from the field of personalization with a set of techniques commonly used in recommender systems,
-								such as those used on Amazon or Netflix. The intuition is that we can model a source's selection of covered news as a preferrence problem:
+								such as those used on Amazon or Netflix. The intuition is that we can model a source's selection of covered news as a preference problem:
 								the editor <i>selects</i> or chooses the events that are most relevant to their audience.
 
 								As such, the algorithm tries to predict the likelihood of a channel covering a given event. To do so, it observes
-								which other sources have selected it, trying to mimick the behaviour of sources similar to that which it is trying to model.
+								which other sources have selected it, trying to mimic the behavior of sources similar to that which it is trying to model.
 								In a sense, the algorithm learns a fingerprint of each sources' coverage patterns so it can match it to other similar ones.
 								These coverage profiles can then be compared to uncover similarities in the choice of their reporting,
-								usually indicating the presence of a common bias. In sum, sources appearing close together on the map are likely to have very similar selection of events.
+								usually indicating the presence of a common bias. In sum, sources appearing close together on the map are likely to have a very similar selection of events.
 
 								</p>
 
@@ -159,18 +160,20 @@
 								<br />
 
 								<p>
-									We have shown how we can generate a comprehensive map of the the news ecosystem from a selection of reported events. However, this first method only
-									provides a static view into an inherently dynamic system. As the media landscape is always evolving, we need a more complete model which
+									We have shown how we can generate a comprehensive map of the news ecosystem from a selection of reported events. However, this first method only
+									provides a static view of an inherently dynamic system. As the media landscape is always evolving, we need a more complete model which
 									takes into account the dynamics of the news ecosystem. We extend the ideas that provide us with a static snapshot to produce an evolving map of source
 									similarity. It highlights
 									important changes that occur when channels modify their news coverage habits. The external or internal forces driving this change can also
 									be isolated to better understand influences on the media ecosystem.
 
+									<br /><br />
+
 									For example, we demonstrate the method's potential for news monitoring applications and investigative journalism by shedding
 									light on important changes in programming induced by mergers and acquisitions, policy changes, or network-wide content
 									diffusion. An example of the phenomenon is shown <a href="#fig2">in Figure 2</a>: news sources tend to agglomerate into
 									cohesive clusters after their acquisitions by three well-known news companies, clearly showing the consolidation of resources
-									taking place in background and the uniformization of information channels.
+									taking place in the background and the uniformization of information channels.
 								</p>
 
 							</section>
@@ -188,7 +191,7 @@
 								<br />
 
 								<p>
-									One of the most common observable pattern is the convergence of a group of sources towards a specific position: as the similarity of
+									One of the most common observable patterns is the convergence of a group of sources towards a specific position: as the similarity of
 									their selection of news increases, the model will highlight their increased similarity. We propose an automated method to detect this
 									phenomenon by introducing the notion of <i>attractors</i>: the algorithm identifies regions of the map toward which many sources converge.
 									Regions with a high potential of attraction are shown in blue in <a href="#fig3">Figure 3</a>.
@@ -197,7 +200,7 @@
 
 									Once identified, the attracted news sources, which are converging towards an attractor, can be monitored. For example, the acquisition
 									campaign performed by Sinclair in September 2017 can be visualized on the right-hand side of <a href="#fig3">Figure 3</a>. The distance from
-									four sources to the attractor is abruptly reduced, suggesting an alignement of content post-acquisition.
+									four sources to the attractor is abruptly reduced, suggesting an alignment of content post-acquisition.
 
 								</p>
 							</section>
@@ -235,7 +238,7 @@
 									<h3 class="underlined">CONTACTS</h3>
 									Don't hesitate to reach out to <b><a>info@obs.media</a></b> for more information or resources regarding this work.
 
-									To follow our research, and stay informed of new work, for example the upcoming interactive media map, you can register for updates here:
+									To follow our research, and stay informed of new work, for example, the upcoming interactive media map, you can register for updates here:
 
 									<br /><br /><br />
 
